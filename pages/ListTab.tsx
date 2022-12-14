@@ -9,36 +9,38 @@ import ArticleIcon from '@mui/icons-material/Article';
 import FacebookIcon from '@mui/icons-material/Facebook';
 export default function ListTab() {
     return (
-        <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-            <nav aria-label="main mailbox folders">
-                <List>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <ArticleIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="กติกาการแข่งขัน" />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <ArticleIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="ข้อสอบเก่า" />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <FacebookIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Facebook" />
-                        </ListItemButton>
-                    </ListItem>
-                </List>
-            </nav>
-            <Divider />
-        </Box>
+        <>
+            <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                <nav aria-label="main mailbox folders">
+                    <List>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <ArticleIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="กติกาการแข่งขัน" />
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <ArticleIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="ข้อสอบเก่า" />
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <FacebookIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Facebook" />
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
+                </nav>
+                <Divider />
+            </Box>
+        </>
     );
 }
