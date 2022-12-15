@@ -11,6 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ArticleIcon from '@mui/icons-material/Article';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import HomeIcon from '@mui/icons-material/Home';
+import Link from 'next/link';
 
 type Anchor = 'left';
 
@@ -45,8 +46,8 @@ export default function Drawer() {
                     <ListItem key={text} disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {text === "หน้าแรก" 
-                                ? 
+                                {text === "หน้าแรก"
+                                ?
                                 <HomeIcon />
                                 :
                                 text === "Facebook"
@@ -55,7 +56,9 @@ export default function Drawer() {
                                 : <ArticleIcon />
                                 }
                             </ListItemIcon>
+                            <Link href="/">
                             <ListItemText primary={text} />
+                            </Link>
                         </ListItemButton>
                     </ListItem>
                 ))}

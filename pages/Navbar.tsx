@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Drawer from './Drawer';
+import Link from 'next/link';
 export default function Navbar() {
     return (
         <>
@@ -14,7 +15,9 @@ export default function Navbar() {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             AMsci
                         </Typography>
+                        <Link href="/login">
                         <Button color="inherit">Login</Button>
+                        </Link>
                     </Toolbar>
                 </AppBar>
             </Box>
