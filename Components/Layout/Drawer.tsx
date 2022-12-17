@@ -42,26 +42,46 @@ export default function Drawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {["หน้าแรก", "กติกาการแข่งขัน", "ข้อสอบเก่า", "Facebook"].map((text) => (
-                    <ListItem key={text} disablePadding>
+                <Link href="/">
+                    <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {text === "หน้าแรก"
-                                ?
                                 <HomeIcon />
-                                :
-                                text === "Facebook"
-                                ?
-                                <FacebookIcon />                            
-                                : <ArticleIcon />
-                                }
                             </ListItemIcon>
-                            <Link href="/">
-                            <ListItemText primary={text} />
-                            </Link>
+                            <ListItemText primary="หน้าแรก" />
                         </ListItemButton>
                     </ListItem>
-                ))}
+                </Link>
+                <Link href="/">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <ArticleIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="กติกาการแข่งขัน" />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+                <Link href="/">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <ArticleIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="ข้อสอบเก่า" />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+                <Link href="https://www.facebook.com/anandayquiz">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <FacebookIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Facebook" />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
             </List>
         </Box>
     );

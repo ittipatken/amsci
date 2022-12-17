@@ -21,12 +21,14 @@ export default function FormRegister() {
                     label="Email"
                 />
                 <TextField
+                    required
                     id="outlined-password-input"
                     label="Password"
                     type="password"
                     autoComplete="current-password"
                 />
                 <TextField
+                    required
                     id="outlined-password-input"
                     label="Password Confirmation"
                     type="password"

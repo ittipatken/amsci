@@ -21,6 +21,7 @@ export default function FormLogin() {
                     label="Email"
                 />
                 <TextField
+                    required
                     id="outlined-password-input"
                     label="Password"
                     type="password"
